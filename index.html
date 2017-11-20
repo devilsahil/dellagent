@@ -21,6 +21,7 @@
 	<LINK rel="canonical" href="http://www1.ap.dell.com/in/en/gen/df.aspx?refid=df&s=gen"/>
 	<link rel="stylesheet" href="https://thankachankarun.github.io/dellagent/style.css">
 		
+	<script  src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.0/sweetalert2.all.js"></script>
 	<script>
@@ -37,11 +38,13 @@
 		}
 	</script>
 	<script>
-		swal({
+		$(document).ready(function () {
+			swal({
 			  position: 'bottom-right',
 			  type: 'info',
 			  title: 'Hi, im the dell virtual sales agent. To get help locate a product call me saying - "Hey Dell!"',
 			})
+					       });
 	</script>
 </head>
 <body>
