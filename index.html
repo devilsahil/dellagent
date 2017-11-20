@@ -28,10 +28,10 @@
 		if (annyang) {
 		  // Let's define a command.
 		  var commands = {
-			'Hey Dell': function() { swal(
-			  'What are you looking to buy?'
+			'Hey Dell': swal(
+			  'What are you looking to buy?',
 			  'question'
-			) }
+			)
 		  };
 		  // Add our commands to annyang
 		  annyang.addCommands(commands);
