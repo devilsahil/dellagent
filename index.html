@@ -28,7 +28,10 @@
 		if (annyang) {
 		  // Let's define a command.
 		  var commands = {
-			'hello': function() { alert('Hello world!'); }
+			'Hey Dell': function() { swal(
+			  'What are you looking to buy?'
+			  'question'
+			) }
 		  };
 		  // Add our commands to annyang
 		  annyang.addCommands(commands);
@@ -42,7 +45,7 @@
 			swal({
 			  position: 'bottom-right',
 			  type: 'info',
-			  title: 'Hi, im the dell virtual sales agent. To get help locate a product call me saying - "Hey Dell!"',
+			  title: 'Hi,I am the DELL Virtual Sales Agent. To get help locate a product call me saying - "Hey Dell!"',
 			})
 					       });
 	</script>
