@@ -28,7 +28,18 @@
 		if (annyang) {
 		  // Let's define a command.
 		  var commands = {
-			    'hello': function() { alert('Hello world!'); }
+			'hello': function() { alert('Hello world!');
+			'Hi Dell': function() {swal({
+				  showCloseButton: true,
+				  imageWidth: 100,
+				  imageHeight: 100,
+				  text: 'What are you looking to buy?',
+				  imageUrl: 'https://thankachankarun.github.io/dellagent/image.png',
+				  imageAlt: 'Microphone',
+				  animation: false,
+				  showConfirmButton: false
+				})
+					      }
 			  };
 			
 		  // Add our commands to annyang
