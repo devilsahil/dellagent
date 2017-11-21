@@ -28,13 +28,7 @@
 		if (annyang) {
 		  // Let's define a command.
 		  var commands = {
-			'hello': function() { alert('Hello world!'); }
-			  };
-		
-		 //functions
-		  var hello = function() { alert('Hello world!'); }
-			  
-		  var HiDell = function() {swal({
+			'Hi Dell': function() {swal({
 				  showCloseButton: true,
 				  imageWidth: 100,
 				  imageHeight: 100,
@@ -44,6 +38,7 @@
 				  animation: false,
 				  showConfirmButton: false
 				}); }
+			  };
 			
 		  // Add our commands to annyang
 		  annyang.addCommands(commands);
