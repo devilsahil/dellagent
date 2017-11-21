@@ -27,7 +27,7 @@
 	<script>
 		if (annyang) {
 		  // Let's define a command.
-		  var commands = {
+		  var HI_DELL = {
 			'Hi Dell': function() {swal({
 				  showCloseButton: true,
 				  imageWidth: 100,
@@ -40,8 +40,51 @@
 				}); }
 			  };
 			
+		 var LAPTOP = {
+			'*stat laptop': function() {swal({
+				  showCloseButton: true,
+				  imageWidth: 100,
+				  imageHeight: 100,
+				  text: 'What are you planning to use the laptop for?',
+				  imageUrl: 'https://thankachankarun.github.io/dellagent/image.png',
+				  imageAlt: 'Microphone',
+				  animation: false,
+				  showConfirmButton: false
+				}); }
+			  };
+			
+		var USE = {
+			'I want to use if for *use': function() {swal({
+				  showCloseButton: true,
+				  imageWidth: 100,
+				  imageHeight: 100,
+				  text: 'What is you price range?',
+				  imageUrl: 'https://thankachankarun.github.io/dellagent/image.png',
+				  imageAlt: 'Microphone',
+				  animation: false,
+				  showConfirmButton: false
+				}); }
+			  };
+		
+		var OTHER = {
+			'Something under *cost': function() {swal({
+				  showCloseButton: true,
+				  imageWidth: 100,
+				  imageHeight: 100,
+				  text: 'Anything other requirement?',
+				  imageUrl: 'https://thankachankarun.github.io/dellagent/image.png',
+				  imageAlt: 'Microphone',
+				  animation: false,
+				  showConfirmButton: false
+				}); }
+			  };
+			
 		  // Add our commands to annyang
-		  annyang.addCommands(commands);
+		  annyang.addCommands(HI_DELL);
+		  annyang.addCommands(LAPTOP);
+		  annyang.addCommands(USE);
+		  annyang.addCommands(PRICE);
+		  annyang.addCommands(OTHER);
 		  // Start listening.
 		  annyang.debug();
 		  annyang.start();
