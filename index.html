@@ -25,7 +25,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.0/sweetalert2.all.js"></script>
 	<script>
-		var req = "";
+		var req = [];
 		
 		if (annyang) {
 		  // Let's define a command.
@@ -67,8 +67,11 @@
 				  animation: false,
 				  showConfirmButton: false
 				}); 
-				req = req + use;
-									}
+				req.push({
+					    key:   "USE",
+					    value: use
+					});
+								}
 			  };
 		
 		var PRICE = {
@@ -82,7 +85,11 @@
 				  animation: false,
 				  showConfirmButton: false
 				}); 
-					req = req + cost;}
+				req.push({
+					    key:   "PRICE",
+					    value: cost
+					});
+								}
 			  };
 			
 		var OTHER = {
@@ -90,13 +97,16 @@
 				  showCloseButton: true,
 				  imageWidth: 100,
 				  imageHeight: 100,
-				  text: 'Anything other requirement?',
+				  text: 'Ok, searching ...',
 				  imageUrl: 'https://thankachankarun.github.io/dellagent/image.png',
 				  imageAlt: 'Microphone',
 				  animation: false,
 				  showConfirmButton: false
 				}); 
-				req = req + other;}
+				req.push({
+					    key:   "OTHER",
+					    value: other
+					});			}
 			  };
 			
 			
@@ -105,6 +115,7 @@
 		  annyang.addCommands(LAPTOP);
 		  annyang.addCommands(USE);
 		  annyang.addCommands(PRICE);
+		  annyang.addCommands(OTHER);
 		  // Start listening.
 		  annyang.debug();
 		  annyang.start();
