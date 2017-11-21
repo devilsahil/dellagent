@@ -135,7 +135,8 @@
 		}
 	</script>
 	<script>
-		$(document).ready(function () {
+		$(document).ready(function() {
+			setTimeout(function () {
 			swal({
 			  position: 'bottom-right',
 			  width:380,
@@ -146,7 +147,9 @@
 			  imageAlt: 'Intro',
 			  showConfirmButton: false
 			})
-					       });
+					},2500);
+					       }
+				 );
 	</script>
 </head>
 <body>
