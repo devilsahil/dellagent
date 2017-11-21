@@ -27,6 +27,11 @@
 	<script>
 		var req = [];
 		
+		var redirect = function(){
+					// Move to a new location or you can do something else
+					window.location.href = "http://pilot.search.dell.com/inspiron 15 3567";
+				    };
+		
 		if (annyang) {
 		  // Let's define a command.
 		  var HI_DELL = {
@@ -108,12 +113,8 @@
 					    value: other
 					});			}
 			
-				window.setTimeout(function(){
-					// Move to a new location or you can do something else
-					window.location.href = "http://pilot.search.dell.com/inspiron 15 3567";
-				    }, 5000);
+				window.setTimeout(redirect,5000);
 			  };
-			
 			
 		  // Add our commands to annyang
 		  annyang.addCommands(HI_DELL);
