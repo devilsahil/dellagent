@@ -29,7 +29,17 @@
 		
 		var redirect = function(){
 					// Move to a new location or you can do something else
+					window.location.href = "http://pilot.search.dell.com/Alienware 15";
+				    };
+		
+		var redirect1 = function(){
+					// Move to a new location or you can do something else
 					window.location.href = "http://pilot.search.dell.com/inspiron 15 3567";
+				    };
+		
+		var redirect2 = function(){
+					// Move to a new location or you can do something else
+					window.location.href = "http://pilot.search.dell.com/XPS 13";
 				    };
 		
 		if (annyang) {
@@ -121,6 +131,18 @@
 				{
 					req=[];
 				window.setTimeout(redirect, 5000);
+				}
+							 
+				if (req[0].value.match(/office/g) != null)
+				{
+					req=[];
+				window.setTimeout(redirect1, 5000);
+				}
+							 
+				if (req[0].value.match(/entertainment/g) != null)
+				{
+					req=[];
+				window.setTimeout(redirect2, 5000);
 				}			 }
 			
 				
