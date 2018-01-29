@@ -5,7 +5,7 @@ body, html {
 
 .bg {
     /* The image used */
-    background-image: url("DellLanding.png");
+    background-image: url("bg.png");
 
     /* Full height */
     height: 100%; 
