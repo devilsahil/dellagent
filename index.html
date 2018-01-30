@@ -36,7 +36,6 @@ talkify.config.remoteService.apiKey = '92950ebc-be0f-47c6-afc8-6610b2d28e3b';
 
 $(document).ready(function() {
 var player = new talkify.TtsPlayer(); //or new talkify.Html5Player()
-player.playText('Hi! I am DeVa, the dell virtual agent. You can start off by saying Hi Dell');
 
 		var req = [];
 		
@@ -54,7 +53,8 @@ player.playText('Hi! I am DeVa, the dell virtual agent. You can start off by say
 					// Move to a new location or you can do something else
 					window.location.href = "http://pilot.search.dell.com/XPS 13";
 				    };
-		
+		player.playText('Hi! I am DeVa, the dell virtual agent. You can start off by saying Hi Dell');
+
 		if (annyang) {
 		  // Let's define a command.
 		  var HI_DELL = {
