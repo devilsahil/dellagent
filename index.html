@@ -61,6 +61,26 @@
 
 				} 
 					};
+			
+		var SHOW_PARTICIPANTS = {
+			'show participants' : function() {
+				  window.open("https://hackelite.cf.isus.emc.com/participants","_self")
+
+				} 
+					};
+		var SHOW_SPEAKERS = {
+			'show speakers' : function() {
+				  window.open("https://hackelite.cf.isus.emc.com/facilitators","_self")
+
+				} 
+					};
+			
+		var SHOW_EXPENSES = {
+			'show expenses' : function() {
+				  window.open("https://hackelite.cf.isus.emc.com/expense","_self")
+
+				} 
+					};
 			  
 		  var HI_DELL = {
 			'Hi Dell': function() {swal({
@@ -171,6 +191,9 @@
 		  // Add our commands to annyang
 		  annyang.addCommands(HI_DELL);
 		annyang.addCommands(CREATE_MEETING);
+			annyang.addCommands(SHOW_PARTICIPANTS);
+			annyang.addCommands(SHOW_SPEAKERS);
+			annyang.addCommands(SHOW_EXPENSES);
 			
 		  annyang.addCommands(LAPTOP);
 		  annyang.addCommands(USE);
