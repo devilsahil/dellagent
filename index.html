@@ -54,6 +54,14 @@
 
 		if (annyang) {
 		  // Let's define a command.
+			
+		var CREATE_MEETING = {
+			'Create Meeting' : function() {swal({
+				  window.open("https://hackelite.cf.isus.emc.com","_self")
+
+				}); 
+					}
+			  };
 		  var HI_DELL = {
 			'Hi Dell': function() {swal({
 				  showCloseButton: true,
@@ -162,6 +170,7 @@
 			
 		  // Add our commands to annyang
 		  annyang.addCommands(HI_DELL);
+		annyang.addCommands(CREATE_MEETING);
 			
 		  annyang.addCommands(LAPTOP);
 		  annyang.addCommands(USE);
